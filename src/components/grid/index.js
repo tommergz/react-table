@@ -3,17 +3,17 @@ import { FixedSizeGrid as Grid } from 'react-window';
 
 import CellTemplate from '../commons/rowTemplates/gridCellTemplate';
 
-const FixedSizeGrid = () => {
+const FixedSizeGrid = ({columns, rows}) => {
 
   const gridRef = useRef(null);
 
     return (
       <>
       <Grid
-        columnCount={8}
+        columnCount={columns}
         columnWidth={100}
         height={500}
-        rowCount={1000}
+        rowCount={rows}
         rowHeight={35}
         width={900}
         ref={gridRef}

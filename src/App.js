@@ -5,7 +5,7 @@ import FixedSizeGrid from './components/grid'
 function App() {
   return (
     <div className="App">
-      <FixedSizeGrid />
+      <FixedSizeGrid columns={8} rows={1000} />
     </div>
   );
 }
